@@ -1,4 +1,4 @@
-# Spa
+# SPA - Heroes
 
 Single Page Application with some Heroes (Marvel and DC Comics) in Angular 2+
 
