@@ -4,7 +4,7 @@ Single Page Application with some Heroes (Marvel and DC Comics) in Angular 2+
 
 > This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.3.
 
-Demo: https://jleon253.github.io/SPA-Heroes/home
+Demo: https://jleon253.github.io/SPA-Heroes
 
 ## Development server
 
