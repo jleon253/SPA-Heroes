@@ -1,0 +1,49 @@
+<h1 class="animated fast">{{ heroe.nombre | uppercase }}</h1>
+<hr />
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <img [src]="heroe.img" alt="" class="img-fluid animated fast fadeIn" />
+        </div>
+        <div class="col-md-6">
+            <div class="card my-3 animated fast fadeIn">
+                <div class="card-header">
+                    Biografía:
+                </div>
+                <div class="card-body">
+                    <p class="card-text">
+                        {{ heroe.bio }}
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="card my-3 animated fast fadeIn">
+                        <div class="card-header">
+                            Año de aparición:
+                        </div>
+                        <div class="card-body">
+                            <p class="card-text">
+                                {{ heroe.aparicion | date }}
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card my-3 animated fast fadeIn">
+                        <div class="card-header">Casa: {{ heroe.casa }}</div>
+                        <div class="card-body">
+                            <img src="assets/img/{{ heroe.casa | lowercase }}-logo.png" class="img-fluid" width="50" height="50" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr/>
+    <div class="row justify-content-center">
+        <div class="col-md-4">
+            <a [routerLink]="['/heroes']" class="btn btn-outline-primary btn-block  animated fast fadeIn">Regresar</a>
+        </div>
+    </div>
+</div>
